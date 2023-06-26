@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  ashu-ui-app:
+    image: ashu-web:app$BUILD_NUMBER
+    build: .
+    container_name: ashuc1
+    ports: # choose 1024 to 6000
+    - 3355:80 
